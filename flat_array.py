@@ -1,6 +1,9 @@
 #!/usr/bin/python
-list_one = list_two = []
-array = [1, 2, 3, 4, [5, ["Kenya",["Nairobi",["Buruburu", ["Phase1", "Phase2"], "Lavington"], "Mombasa", "Kisumu"], "Uganda", ["Kampala", "Kigali"], "Tanzania", ["Dar", "Moshi", "Moro"]], 6, 7], [8, 9], 10, [11], "Abby", ["Moses"], ["Joseph"]]
+flat_list = []
+country = ["Kenya", ["Nairobi",["Buruburu", ["Phase1", "Phase2"], "Lavington"], "Mombasa", "Kisumu"], "Tanzania"]
+name = ["Abby", ["Moses", "James", "Joseph", ["Nampaso", "Karanja", "Omondi"]], ["Lilian"]]
+
+array = [1, 2, 3, 4, [5, country, 6, 7], [8, 9], 10, [11], name]
 
 def flatten_list(my_list):
   if type(my_list) is not list:
@@ -13,10 +16,11 @@ def flatten_list(my_list):
         if type(num_one) is list:
           flatten_list(num_one)
         else:
-          list_one.append(num_one)
+          flat_list.append(num_one)
     else: return "List passed is empty."
-
-  return list_one
-
-print flatten_list(array)
+  return flat_list
+  
+print "\nNested list \n{}". format(array)
+print "\n++++++++++++++++++++++++++++++++"
+print "\nFlattened array \n{}". format(flatten_list(array))
 
