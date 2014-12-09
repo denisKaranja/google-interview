@@ -1,4 +1,12 @@
 #!/usr/bin/python
+"""
+Author: Denis Karanja,
+Institution: The University of Nairobi, Kenya,
+Department: School of Computing and Informatics, Chiromo campus
+Email: dee.caranja@gmail.com,
+Task: Flatten a nested list
+License type: MIT :)
+"""
 flat_list = []
 country = ["Kenya", ["Nairobi",["Buruburu", ["Phase1", "Phase2"], "Lavington"], "Mombasa", "Kisumu"], "Tanzania"]
 name = ["Abby", ["Moses", "James", "Joseph", ["Nampaso", "Karanja", "Omondi"]], ["Lilian"]]
