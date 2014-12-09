@@ -19,8 +19,8 @@ def flatten_list(my_list):
           flat_list.append(num_one)
     else: return "List passed is empty."
   return flat_list
-  
+
 print "\nNested list \n{}". format(array)
 print "\n++++++++++++++++++++++++++++++++"
-print "\nFlattened array \n{}". format(flatten_list(array))
+print "\nFlattened array \n{}\n". format(flatten_list(array))
 
