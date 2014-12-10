@@ -31,4 +31,3 @@ def flatten_list(my_list):
 print "\nNested list \n{}". format(array)
 print "\n++++++++++++++++++++++++++++++++"
 print "\nFlattened array \n{}\n". format(flatten_list(array))
-
