@@ -1,4 +1,4 @@
-google|facebook|twitter|-interview
+[Google, Facebook, Twitter|- interview
 ================
 
-Sample Google|Facebook|Twittre interview questons solved.
+Sample Google|Facebook|Twittre interview practice questons
