@@ -15,8 +15,9 @@ array = [1, 2, 3, 4, [5, country, 6, 7], [8, 9], 10, [11], name]
 
 def flatten_list(my_list):
   if type(my_list) is not list:
-    return "Function 'flatten_list' expects a list. '{}' given ".format(type(my_list))
+    raise TypeError("Function 'flatten_list' expects a list. '{}' given ".format(type(my_list)))
   elif type(my_list) is list:
+    print "\nNested list \n{}". format(my_list)
     #check if list is null
     if len(my_list) != 0:
       for i, num_one in enumerate(my_list):
@@ -28,6 +29,6 @@ def flatten_list(my_list):
     else: return "List passed is empty."
   return flat_list
 
-print "\nNested list \n{}". format(array)
+
 print "\n++++++++++++++++++++++++++++++++"
-print "\nFlattened array \n{}\n". format(flatten_list(array))
+print "\nFlattened array \n{}\n". format(flatten_list(1234))
